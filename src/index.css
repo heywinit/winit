@@ -97,5 +97,5 @@
 }
 
 .slide-item {
-  @apply px-2 py-1 bg-p m-1 rounded-md;
+  @apply px-2 py-1 w-max bg-p m-1 rounded-md;
 }
