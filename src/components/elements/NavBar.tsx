@@ -18,7 +18,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`flex w-full select-none rounded-lg p-2 justify-between ${
+      className={`flex w-full select-none rounded-lg px-2 py-1.5 justify-between ${
         theme === "dark" ? "bg-p" : "bg-white"
       }`}
     >
@@ -28,8 +28,8 @@ export default function NavBar() {
             className={`p-3 ${
               p === page
                 ? theme === "dark"
-                  ? "bg-white/[.25]"
-                  : "bg-stone-500/[.3]"
+                  ? "bg-white/[.1]"
+                  : "bg-black/[.1]"
                 : ""
             } rounded-full cursor-pointer flex justify-center items-center transition-colors duration-300 ease-in-out`}
             key={p}

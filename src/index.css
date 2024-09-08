@@ -27,7 +27,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
     --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
+    --primary-foreground: 0 0% 9w8%;
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;
     --muted: 0 0% 96.1%;
@@ -81,4 +81,21 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+.slide-container {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--foreground) var(--background);
+}
+
+.slide-track {
+  display: flex;
+  width: calc(200%);
+  flex-shrink: 0;
+}
+
+.slide-item {
+  @apply px-2 py-1 bg-p m-1 rounded-md;
 }
