@@ -26,7 +26,7 @@ function App() {
       .then((data) => {
         setGithubData(data);
       });
-  });
+  }, []);
 
   return (
     <div className="w-screen h-screen p-4 flex-grow space-y-4">
