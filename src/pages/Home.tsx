@@ -209,8 +209,10 @@ function App() {
             },
           ].map((project) => (
             <div
-              className={`flex bg-p space-x-2 items-center p-2 rounded-md select-none ${
-                theme === "dark" ? "bg-white/[0.03] text-white" : "bg-gray-200"
+              className={`flex space-x-2 items-center p-2 rounded-md select-none ${
+                theme === "dark"
+                  ? "bg-white/[0.03] text-white"
+                  : "bg-gray-300/50"
               }`}
               onClick={() => {
                 navigate("/projects");
