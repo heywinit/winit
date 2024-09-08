@@ -189,7 +189,7 @@ function App() {
           {[
             {
               name: "QT MHK-28",
-              desc: "QuatTar Mobile High-Impact Kill Guided Missile",
+              desc: "QuatTar Mobile High-Impact Guided Rocket",
               icon: <Rocket className="w-8" />,
             },
             // {
