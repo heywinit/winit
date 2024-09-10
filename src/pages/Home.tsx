@@ -80,7 +80,7 @@ function App() {
             className={
               theme === "dark"
                 ? "bg-white/[0.03] text-white"
-                : "bg-p text-white"
+                : "bg-gray-100 text-p border-2"
             }
             onClick={() => {
               navigate("/contact");
@@ -107,7 +107,7 @@ function App() {
           </div>
           <div className={`slide-container text-white`}>
             <div className="slide-track">
-              {[1, 2, 3, 4, 5, 6, 7, 8].map(() =>
+              {[1, 2].map(() =>
                 [
                   "golang",
                   "js/ts",
@@ -117,7 +117,14 @@ function App() {
                   "python",
                   "bash",
                 ].map((item, idx) => (
-                  <div key={idx} className="slide-item">
+                  <div
+                    key={idx}
+                    className={`slide-item ${
+                      theme === "dark"
+                        ? "text-white bg-p"
+                        : "text-black bg-white"
+                    }`}
+                  >
                     {item}
                   </div>
                 ))
@@ -125,7 +132,7 @@ function App() {
             </div>
 
             <div className="slide-track">
-              {[1, 2, 3, 4, 5, 6].map(() =>
+              {[1, 2].map(() =>
                 [
                   "spring",
                   "javalin",
@@ -137,7 +144,14 @@ function App() {
                   "angular",
                   "nextjs",
                 ].map((item, idx) => (
-                  <div key={idx} className="slide-item">
+                  <div
+                    key={idx}
+                    className={`slide-item ${
+                      theme === "dark"
+                        ? "text-white bg-p"
+                        : "text-black bg-white"
+                    }`}
+                  >
                     {item}
                   </div>
                 ))
@@ -145,10 +159,17 @@ function App() {
             </div>
 
             <div className="slide-track">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(() =>
+              {[1, 2].map(() =>
                 ["linux", "git", "vercel", "docker", "kubernetes", "aws"].map(
                   (item, idx) => (
-                    <div key={idx} className="slide-item">
+                    <div
+                      key={idx}
+                      className={`slide-item ${
+                        theme === "dark"
+                          ? "text-white bg-p"
+                          : "text-black bg-white"
+                      }`}
+                    >
                       {item}
                     </div>
                   )
@@ -176,7 +197,7 @@ function App() {
               className={
                 theme === "dark"
                   ? "bg-white/[0.03] text-white"
-                  : "bg-p text-white"
+                  : "bg-white text-black"
               }
               onClick={() => {
                 navigate("/projects");
@@ -189,7 +210,7 @@ function App() {
           {[
             {
               name: "QT MHK-28",
-              desc: "QuatTar Mobile High-Impact Guided Rocket",
+              desc: "QuatTar Mobile High-Impact Kill Guided Missile",
               icon: <Rocket className="w-8" />,
             },
             // {
