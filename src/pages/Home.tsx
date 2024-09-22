@@ -65,7 +65,7 @@ function App() {
               theme === "dark" ? "text-white/[0.9]" : "text-black/[0.9]"
             }`}
           >
-            I'm a 18 y/o Software Developer & Avionics Engineer from India. This
+            I'm a 19 y/o Software Developer & Avionics Engineer from India. This
             is my personal website where I share my projects, thoughts and
             experiences.
           </h2>
@@ -107,16 +107,51 @@ function App() {
           </div>
           <div className={`slide-container text-white`}>
             <div className="slide-track">
-              {[1, 2].map(() =>
-                [
-                  "golang",
-                  "js/ts",
-                  "java",
-                  "c/c++",
-                  "html/css",
-                  "python",
-                  "bash",
-                ].map((item, idx) => (
+              {[
+                "golang",
+                "js/ts",
+                "java",
+                "c/c++",
+                "html/css",
+                "python",
+                "bash",
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className={`slide-item ${
+                    theme === "dark" ? "text-white bg-p" : "text-black bg-white"
+                  }`}
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <div className="slide-track">
+              {[
+                "spring",
+                "javalin",
+                "react",
+                "express",
+                "node",
+                "mysql",
+                "mongodb",
+                "nextjs",
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className={`slide-item ${
+                    theme === "dark" ? "text-white bg-p" : "text-black bg-white"
+                  }`}
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+
+            <div className="slide-track">
+              {["linux", "git", "vercel", "docker", "kubernetes", "aws"].map(
+                (item, idx) => (
                   <div
                     key={idx}
                     className={`slide-item ${
@@ -127,52 +162,6 @@ function App() {
                   >
                     {item}
                   </div>
-                ))
-              )}
-            </div>
-
-            <div className="slide-track">
-              {[1, 2].map(() =>
-                [
-                  "spring",
-                  "javalin",
-                  "react",
-                  "express",
-                  "node",
-                  "mysql",
-                  "mongodb",
-                  "angular",
-                  "nextjs",
-                ].map((item, idx) => (
-                  <div
-                    key={idx}
-                    className={`slide-item ${
-                      theme === "dark"
-                        ? "text-white bg-p"
-                        : "text-black bg-white"
-                    }`}
-                  >
-                    {item}
-                  </div>
-                ))
-              )}
-            </div>
-
-            <div className="slide-track">
-              {[1, 2].map(() =>
-                ["linux", "git", "vercel", "docker", "kubernetes", "aws"].map(
-                  (item, idx) => (
-                    <div
-                      key={idx}
-                      className={`slide-item ${
-                        theme === "dark"
-                          ? "text-white bg-p"
-                          : "text-black bg-white"
-                      }`}
-                    >
-                      {item}
-                    </div>
-                  )
                 )
               )}
             </div>
@@ -209,12 +198,12 @@ function App() {
           </div>
           {[
             {
-              name: "QT MHK-28",
-              desc: "QuatTar Mobile High-Impact Kill Guided Missile",
+              name: "QT MHK-26",
+              desc: "QuatTar Mobile Homing Krait Guided Missile",
               icon: <Rocket className="w-8" />,
             },
             // {
-            //   name: "QT LaDE-2",
+            //   name: "QT LaDE-2",n
             //   desc: "QuatTar Low-Altitude Direct Engagement Guided Missile.",
             //   icon: <Rocket className="w-8" />,
             // },
