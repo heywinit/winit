@@ -5,11 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        p: "#16DB65",
-        s: "#058C42",
-        t: "#04471C",
-        q: "#0D2818",
-        b: "#020202",
+        p: "#eb5e28",
+        t: "#fffce8",
+        b: "#3e363f",
       },
     },
   },
