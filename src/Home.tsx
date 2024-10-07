@@ -2,13 +2,13 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 
-export default function App() {
+export default function Home() {
   return (
     <div className="flex h-screen w-screen justify-center px-32">
       <NavBar />
       <div className="flex flex-col flex-grow">
         <div className="flex flex-col flex-grow p-8">
-          <h1 className="text-3xl font-bold">about me</h1>
+          <h1 className="text-3xl font-bold">/</h1>
           <hr className="my-4 bg-p" />
           <div className="text-lg leading-tight space-y-3">
             <p>
@@ -17,6 +17,16 @@ export default function App() {
               I've been programming since I was 12, and professionally for about
               4 years now. My current favorite languages are GoLang &
               TypeScript.
+            </p>
+
+            <p>
+              I started off with QBASIC in school, then meddled with some C# &
+              C++ for Unity and Unreal while trying to make my own Grand Theft
+              Auto V when I was 14 (sounds silly, I know). Later, I started
+              playing a lot of Minecraft and got into Java using which I made
+              mods and plugins. Then I started learning React & Node.js,
+              succeeded by Python. And at last I found GoLang, which I've been
+              using for the past 1.5 years.
             </p>
 
             <p>
@@ -59,17 +69,29 @@ export default function App() {
               My personal favorite aircraft are:
               <ul className="list-disc ml-5">
                 <li>
-                  <a className="font-semibold hover:bg-p px-1">
+                  <a
+                    className="font-semibold hover:bg-p px-1"
+                    href="https://en.wikipedia.org/wiki/Lockheed_F-117_Nighthawk"
+                    target="_blank"
+                  >
                     Lockheed Martin F-117 NightHawk
                   </a>
                 </li>
                 <li>
-                  <a className="font-semibold hover:bg-p px-1">
-                    Rockwell B-1B Lancer
+                  <a
+                    className="font-semibold hover:bg-p px-1"
+                    href="https://www.wikiwand.com/en/articles/Rockwell_B-1_Lancer"
+                    target="_blank"
+                  >
+                    Rockwell B-1 Lancer
                   </a>
                 </li>
                 <li>
-                  <a className="font-semibold hover:bg-p px-1">
+                  <a
+                    className="font-semibold hover:bg-p px-1"
+                    href="https://www.wikiwand.com/en/articles/Ilyushin_Il-76"
+                    target="_blank"
+                  >
                     Ilyushin IL-76
                   </a>
                 </li>
@@ -78,9 +100,22 @@ export default function App() {
 
             <p>
               Beyond tech and aviation, I'm also a huge fan of music, especially
-              hip-hop. I enjoy French rap, trap, and Desi hip-hop. Recently,
+              hip-hop. I enjoy French Rap, Trap, and Desi hip-hop. Recently,
               I've been learning to play the flute, adding a new dimension to my
               musical interests.
+            </p>
+
+            <p>
+              I am here to learn, grow, and build. I'm always open to new ideas
+              and challenges. Feel free to{" "}
+              <Link
+                className="font-semibold hover:bg-p px-1"
+                to="/contact"
+                target="_blank"
+              >
+                reach out
+              </Link>{" "}
+              if you want to collaborate or just chat.
             </p>
           </div>
         </div>
