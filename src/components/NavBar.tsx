@@ -8,10 +8,10 @@ export default function NavBar() {
   }
 
   return (
-    <aside className="flex flex-col border-x-2 justify-between border-p select-none w-1/3">
+    <aside className="flex flex-col border-x-2 justify-between border-p select-none w-1/2">
       <div>
         <div className="p-8 border-b-2 border-p bg-p">
-          <h1 className="text-3xl font-bold">Vinesh Rajpurohit</h1>
+          <h1 className="text-3xl font-bold">Winit.</h1>
           <h2 className="text-xl italic font-medium">backend developer</h2>
         </div>
         <nav className="p-8 py-4 space-y-2 border-b-2 border-p">
