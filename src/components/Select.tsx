@@ -11,7 +11,7 @@ export default function Select({
 }) {
   return (
     <select
-      className="bg-s border-2 border-p rounded-md"
+      className="bg-s border-2 border-p rounded-md p-2 py-0.5"
       value={selected}
       onChange={onChange}
     >
