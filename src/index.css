@@ -20,3 +20,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+input[type="checkbox"] {
+  accent-color: #eb5e28;
+}
