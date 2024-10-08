@@ -30,19 +30,19 @@ export default function Blogs() {
   }, [blogTitle]);
 
   return (
-    <div className="flex h-screen w-screen justify-center px-32">
+    <div className="flex flex-col lg:flex-row h-screen w-screen justify-center lg:px-32">
       <NavBar />
-      <div className="flex flex-col flex-grow">
-        <div className="flex flex-col flex-grow border-r-2 border-r-p p-8 h-full">
+      <div className="flex flex-col flex-grow lg:border-r-2 border-r-p overflow-y-auto">
+        <div className="flex flex-col flex-grow lg:border-r-2 border-r-p p-8">
           <h1 className="text-3xl font-bold">/blogs</h1>
           <hr className="my-4 bg-p" />
           <div className="space-y-2 h-full">
             <div className="flex justify-between">
-              <div className="flex items-center">
+              <div className="flex items-center w-full lg:w-max ">
                 <input
                   type="text"
                   placeholder="search"
-                  className="bg-black border-2 text-white placeholder-white border-p p-2 py-0.5 focus:outline-none"
+                  className="bg-black border-2 w-full lg:w-max text-white placeholder-white border-p p-2 py-0.5 focus:outline-none"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                 />
@@ -65,7 +65,7 @@ export default function Blogs() {
             </div>
             <div className="flex flex-grow flex-col h-full">
               <div className="flex h-full overflow-y-auto">
-                <div className="flex flex-col w-1/5 h-full border-x-2 border-t-2 border-p">
+                <div className="flex flex-col w-full lg:w-1/5 h-full border-x-2 border-t-2 border-p">
                   {blogs.map((e, i) => {
                     if (e.hidden) return null;
                     if (!e.title.toLowerCase().includes(search.toLowerCase()))
@@ -92,7 +92,7 @@ export default function Blogs() {
                     );
                   })}
                 </div>
-                <div className="w-4/5 border-y-2 border-r-2 border-p h-full">
+                <div className="lg:flex hidden w-4/5 border-y-2 border-r-2 border-p h-full">
                   {selected && (
                     <div className="flex flex-col p-2">
                       <h1 className="text-2xl font-semibold">{selected}</h1>

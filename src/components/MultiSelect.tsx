@@ -39,7 +39,7 @@ export default function MultiSelect({
   }, []);
 
   return (
-    <div className="relative w-48" ref={ref}>
+    <div className="relative lg:w-48 w-full" ref={ref}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-2 py-0.5 bg-s border-2 border-p shadow-sm flex justify-between items-center"

@@ -131,26 +131,26 @@ export default function Projects() {
   ];
 
   return (
-    <div className="flex h-screen w-screen justify-center px-32">
+    <div className="flex flex-col lg:flex-row h-screen w-screen justify-center lg:px-32">
       <NavBar />
-      <div className="flex flex-col flex-grow">
-        <div className="flex flex-col flex-grow border-r-2 border-r-p p-8">
+      <div className="flex flex-col flex-grow lg:border-r-2 border-r-p overflow-y-auto">
+        <div className="flex flex-col flex-grow lg:border-r-2 border-r-p p-8">
           <h1 className="text-3xl font-bold">/projects</h1>
           <hr className="my-4 bg-p" />
           <div className="space-y-2">
-            <div className="flex justify-between">
+            <div className="flex flex-col lg:flex-row justify-between">
               <div>
                 <input
                   type="text"
                   placeholder="search"
-                  className="bg-black border-2 text-white placeholder-white border-p p-2 py-0.5 focus:outline-none"
+                  className="bg-black border-2 text-white placeholder-white border-p p-2 w-full lg:w-max py-0.5 focus:outline-none"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                 />
               </div>
               <div>
-                <div className="flex space-x-2">
-                  <div className="flex items-center space-x-1">
+                <div className="flex flex-col lg:flex-row lg:space-x-2">
+                  <div className="flex items-center space-x-1 w-full lg:w-max">
                     <Select
                       options={["status", "work in progress", "done"]}
                       selected={status}
@@ -159,7 +159,7 @@ export default function Projects() {
                       }}
                     />
                   </div>
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center space-x-1 w-full lg:w-max">
                     <MultiSelect
                       options={techs.map((e) => {
                         return { key: e, value: e };
@@ -173,7 +173,7 @@ export default function Projects() {
             </div>
             <div className="flex flex-grow flex-col">
               <div className="h-full overflow-y-auto">
-                <div className="grid grid-cols-4 gap-2">
+                <div className="flex flex-col lg:grid grid-cols-4 gap-2">
                   {projects.map((e, i) => {
                     // Hide hidden projects
                     if (e.hidden) {

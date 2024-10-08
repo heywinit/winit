@@ -3,39 +3,14 @@ import Footer from "../components/Footer";
 
 export default function Contact() {
   return (
-    <div className="flex h-screen w-screen justify-center px-32">
+    <div className="flex flex-col lg:flex-row h-screen w-screen justify-center lg:px-32">
       <NavBar />
-      <div className="flex flex-col flex-grow border-r-2 border-r-p overflow-y-auto">
+      <div className="flex flex-col flex-grow lg:border-r-2 border-r-p overflow-y-auto">
         <div className="flex flex-col flex-grow p-8 h-full">
           <h1 className="text-3xl font-bold">/contact</h1>
           <hr className="my-4 bg-p" />
           <div className="flex border-p border-2 divide-x-2 divide-p h-full">
-            <div className="flex flex-col w-1/3 p-4 justify-between">
-              <div className="space-y-2 w-full">
-                <input
-                  type="email"
-                  className="py-0.5 w-full bg-black border-2 border-p text-white placeholder-white p-2 focus:outline-none"
-                  placeholder="email"
-                />
-                <input
-                  id="subject"
-                  className="py-0.5 w-full bg-black border-2 border-p text-white placeholder-white p-2 focus:outline-none"
-                  placeholder="subject"
-                />
-                <textarea
-                  rows={10}
-                  className="py-0.5 w-full bg-black border-2 border-p text-white placeholder-white p-2 focus:outline-none"
-                  placeholder="message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="border-2 border-p font-semibold hover:bg-p py-0.5"
-              >
-                Send
-              </button>
-            </div>
-            <div className="w-2/3 grid grid-cols-4 grid-rows-4 p-4 gap-2">
+            <div className="flex flex-col lg:lw-2/3 lg:grid grid-cols-4 grid-rows-4 p-4 gap-2">
               <a
                 className="w-full h-full border-2 border-p col-span-2 hover:bg-p group"
                 href="https://github.com/heywinit"
@@ -100,7 +75,6 @@ export default function Contact() {
                   rockets. if you're into that, feel free to subscribe.
                 </div>
               </a>
-
               <a
                 className="w-full h-full border-2 border-p hover:bg-p group"
                 href="https://stackoverflow.com/users/27690793/heywinit"
@@ -138,7 +112,7 @@ export default function Contact() {
                   discord.
                 </div>
               </a>
-              <div className="w-full h-full border-2 border-p col-span-2 row-span-2 bg-p p-2 leading-tight font-bwold space-y-2">
+              <div className="hidden lg:block w-full h-full border-2 border-p col-span-2 row-span-2 bg-p p-2 leading-tight font-bwold space-y-2">
                 <p>
                   these are my socials. feel free to reach out to me on any of
                   these platforms. i usually respond within 24 hours.
@@ -163,7 +137,21 @@ export default function Contact() {
                 <div className=" hidden group-hover:flex p-2 leading-tight">
                   mostly listenin to the regular old hiphop, add me if you want.
                 </div>
-              </a>
+              </a>{" "}
+              <div className="block lg:hidden w-full h-full border-2 border-p col-span-2 row-span-2 bg-p p-2 leading-tight font-bwold space-y-2">
+                <p>
+                  these are my socials. feel free to reach out to me on any of
+                  these platforms. i usually respond within 24 hours.
+                </p>
+                <p>
+                  join my discord server for a more interactive experience. my
+                  server is based around programming, aerospace, and gaming.
+                </p>
+                <p>
+                  generally, i'm most active on discord, so if you want a quick
+                  response, that's the way to go.
+                </p>
+              </div>
             </div>
           </div>
         </div>

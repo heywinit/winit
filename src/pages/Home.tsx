@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="flex h-screen w-screen justify-center px-32">
+    <div className="flex flex-col lg:flex-row h-screen w-screen justify-center lg:px-32">
       <NavBar />
-      <div className="flex flex-col flex-grow border-r-2 border-r-p overflow-y-auto">
+      <div className="flex flex-col flex-grow lg:border-r-2 border-r-p overflow-y-auto">
         <div className="flex flex-col flex-grow p-8">
           <h1 className="text-3xl font-bold">/</h1>
           <hr className="my-4 bg-p" />
