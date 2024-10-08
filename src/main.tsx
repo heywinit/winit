@@ -1,13 +1,16 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Home";
-import Projects from "./Projects";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <div>404</div>,
   },
   {
     path: "/projects",
@@ -15,11 +18,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/blog",
-    element: <Home />,
+    element: <Blogs />,
+  },
+  {
+    path: "/blog/:blogTitle",
+    element: <Blogs />,
   },
   {
     path: "/contact",
-    element: <Home />,
+    element: <Contact />,
   },
 ]);
 

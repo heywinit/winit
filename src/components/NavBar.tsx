@@ -17,7 +17,7 @@ export default function NavBar() {
   }
 
   return (
-    <aside className="flex flex-col border-x-2 justify-between border-p select-none min-w-[20%] w-[20%]">
+    <aside className="flex flex-col border-x-2 justify-between border-p select-none min-w-[20%] w-[20%] h-full">
       <div className="">
         <div className="p-8 border-b-2 border-p bg-p ">
           <h1 className="text-3xl font-bold">Winit.</h1>
