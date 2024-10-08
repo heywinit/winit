@@ -8,7 +8,7 @@ export default function MultiSelect({
 }: {
   options: { key: string; value: string }[];
   selected: string[];
-  setSelected: (selected: string[]) => void;
+  setSelected: any;
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
