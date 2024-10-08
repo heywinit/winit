@@ -12,7 +12,7 @@ export default function Home() {
           <hr className="my-4 bg-p" />
           <div className="text-lg leading-tight space-y-3">
             <p>
-              Good morning! I'm a backend developer and avionics enthusiast,
+              Hey there! I'm a backend developer and avionics enthusiast,
               currently studying computer science and aerospace engineering.
               I've been programming since I was 12, and professionally for about
               4 years now. My current favorite languages are GoLang &
