@@ -3,7 +3,6 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Select from "../components/Select";
 import MultiSelect from "../components/MultiSelect";
-import { Link } from "react-router-dom";
 
 export default function Projects() {
   const [status, setStatus] = React.useState("status");
