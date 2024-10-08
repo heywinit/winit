@@ -1,21 +1,6 @@
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  function getRandomLyric() {
-    const lyrics = [
-      { q: "Everything I'm not made me everything I am", a: "Kanye West" },
-    ];
-
-    const r = lyrics[Math.floor(Math.random() * lyrics.length)];
-
-    return (
-      <div>
-        <h3 className="text-xl font-bold">{r.q}</h3>
-        <h4 className="text-lg font-semibold text-right">- {r.a}</h4>
-      </div>
-    );
-  }
-
   return (
     <aside className="flex flex-col border-x-2 justify-between border-p select-none min-w-[20%] w-[20%] h-full">
       <div className="">
@@ -41,9 +26,6 @@ export default function NavBar() {
             );
           })}
         </nav>
-      </div>
-      <div className="border-t-2 border-p p-2 py-1 select-text">
-        {getRandomLyric()}
       </div>
     </aside>
   );
