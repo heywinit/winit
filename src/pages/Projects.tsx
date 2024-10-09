@@ -24,7 +24,14 @@ export default function Projects() {
     "webassembly",
   ];
 
-  const projects = [
+  const projects = [{
+      name: "QuatTar MHK-26X",
+      desc: "The QuatTar Mobile Homing Krait - 26, a supersonic supermaneuverable missile capable of executing an S Maneuver.",
+      tech: ["c", "c++"],
+      status: "work in progress",
+      github: "https://github.com/heywinit/QT-MHK-26",
+      hidden: false,
+    },
     {
       name: "discodb",
       desc: "database that stores data in discord allowing for unlimited storage.",
