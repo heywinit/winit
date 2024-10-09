@@ -71,7 +71,7 @@ export default function Home() {
                 <li>
                   <a
                     className="font-semibold hover:bg-p px-1"
-                    href="https://en.wikipedia.org/wiki/Lockheed_F-117_Nighthawk"
+                    href="https://www.wikiwand.com/en/articles/Lockheed_F-117_Nighthawk"
                     target="_blank"
                   >
                     Lockheed Martin F-117 NightHawk
