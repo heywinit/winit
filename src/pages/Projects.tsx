@@ -187,7 +187,7 @@ export default function Projects() {
                       return null;
                     }
                     // Filter by search
-                    if (!e.name.toLowerCase().includes(search.toLowerCase())) {
+                    if (!e.name.toLowerCase().includes(search.toLowerCase()) || !e.desc.toLowerCase().includes(search.toLowerCase()) ) {
                       return null;
                     }
                     // Filter by status
